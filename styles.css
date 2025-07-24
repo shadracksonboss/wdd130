@@ -1,26 +1,25 @@
-
 main {
-  width: 80%;
+  
   max-width: 800px;
   margin: 0 auto;
 }
 
+main img {
+  width: 150px;
+  height: auto;
+}
+
 aside {
-  width: 80%;
-  margin: 2rem auto;
-  border: 2px solid #ccc;
-  padding: 1rem;
-  background-color: #f0f8ff;
-  color: #333;
+  width: 300px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  padding: 10px;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
 aside img {
   width: 200px;
-  height: auto;
-}
-
-main img {
-  width: 150px;
   height: auto;
 }
 
@@ -29,9 +28,11 @@ p {
 }
 
 footer {
-  margin-top: 2rem;
-  border-top: 2px solid #999;
+  margin-top: 20px;
+  border-top: 1px solid #888;
   text-align: center;
-  padding-top: 1rem;
 }
+
+
+
 
