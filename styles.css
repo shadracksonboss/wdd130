@@ -1,7 +1,7 @@
 main {
   
   max-width: 800px;
-  margin: 0 auto;
+  
 }
 
 main img {
@@ -12,7 +12,7 @@ main img {
 aside {
   width: 20rem;
   margin: 1rem auto;
-  border: 2px solid rgb;
+  border: 1px solid rgb;
   padding: 1rem;
   background-color: #eee;
   color: #333;
