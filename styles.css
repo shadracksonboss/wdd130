@@ -10,12 +10,13 @@ main img {
 }
 
 aside {
-  width: 300px;
-  margin: 20px auto;
-  border: 2px solid #333;
-  padding: 10px;
-  background-color: #f9f9f9;
-  color: #222;
+  width: 20rem;
+  margin: 1rem auto;
+  border: 2px solid rgb;
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
 }
 
 aside img {
