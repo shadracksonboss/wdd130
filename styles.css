@@ -12,7 +12,7 @@ main img {
 aside {
   width: 20rem;
   margin: 1rem auto;
-  border: 1px solid rgb;
+  border: 1px solid rgb(100,100,100;
   padding: 1rem;
   background-color: #eee;
   color: #333;
@@ -32,6 +32,43 @@ footer {
   margin-top: 20px;
   border-top: 1px solid #888;
   text-align: center;
+}
+
+/*Navigation bar Styling*/
+nav{
+  background-color: #003366; /* BYU Idaho blue*/
+  padding: 1rem;
+}
+
+/*Navigation links*/
+nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+/* Main heading style*/
+h1{
+  color: #003366;
+}
+
+/* All images*/
+img{
+  width: 150px;
+  height: auto;
+  border: 2px solid #ccc;
+  padding: 4px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+nav a:hover{
+  background-color: #0055aa;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 
