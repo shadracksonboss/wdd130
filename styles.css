@@ -1,4 +1,5 @@
-img{
+/* ========== GLOBAL IMAGE RULE ========== */
+img {
   width: 150px;
   height: auto;
   border: 2px solid #ccc;
@@ -6,52 +7,7 @@ img{
   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
 
-main img {
-  width: 150px;
-  height: auto;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-}
-
-main {
-  
-  max-width: 800px;
-}
-
-aside {
-  width: 20rem;
-  margin: 1rem auto;
-  border: 1px solid rgb(100, 100, 100);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
-}
-
-p {
-  padding: 0;
-}
-
-h1{
-  color: #003366;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-nav{
-  background-color: #003366; /* BYU Idaho blue*/
-  padding: 1rem;
-}
-
-/*Navigation links*/
+/* ========== NAVIGATION LINKS ========== */
 nav a {
   color: white;
   text-decoration: none;
@@ -59,25 +15,72 @@ nav a {
   padding: 0.5rem 1rem;
 }
 
-nav a:hover{
-
+/* ========== NAVIGATION HOVER EFFECT ========== */
+nav a:hover {
   background-color: #0055aa;
   border-radius: 4px;
 }
 
+/* ========== NAVIGATION BAR ========== */
+nav {
+  background-color: #003366; /* BYU-Idaho Blue */
+  padding: 1rem;
+}
+
+/* ========== MAIN SECTION ========== */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Optional: Main heading */
+h1 {
+  color: #003366;
+}
+
+/* ========== MAIN IMAGE SPECIFIC (if needed) ========== */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* ========== ASIDE SECTION ========== */
+aside {
+  width: 20rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  border: 1px solid rgb(100, 100, 100); /* fixed valid RGB */
+}
+
+/* ========== ASIDE IMAGE SPECIFIC ========== */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* ========== PARAGRAPH STYLE ========== */
+p {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+/* ========== FOOTER ========== */
 footer {
   margin-top: 20px;
   border-top: 1px solid #888;
   text-align: center;
+  padding: 1rem;
 }
 
-/*Navigation bar Styling*/
-
-
-/* Main heading style*/
-
-
-/* All images*/
-
-
-
+/* ========== BODY BASE STYLE (optional for nice visuals) ========== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
