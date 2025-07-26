@@ -1,12 +1,24 @@
-
-main {
-  
-  max-width: 800px;
+img{
+  width: 150px;
+  height: auto;
+  border: 2px solid #ccc;
+  padding: 4px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
 
 main img {
   width: 150px;
   height: auto;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+main {
+  
+  max-width: 800px;
 }
 
 aside {
@@ -19,22 +31,21 @@ aside {
   text-align: center;
 }
 
-aside img {
-  width: 200px;
-  height: auto;
-}
-
 p {
   padding: 0;
 }
 
-footer {
-  margin-top: 20px;
-  border-top: 1px solid #888;
-  text-align: center;
+h1{
+  color: #003366;
 }
 
-/*Navigation bar Styling*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 nav{
   background-color: #003366; /* BYU Idaho blue*/
   padding: 1rem;
@@ -48,22 +59,25 @@ nav a {
   padding: 0.5rem 1rem;
 }
 
-/* Main heading style*/
-h1{
-  color: #003366;
-}
-
-/* All images*/
-img{
-  width: 150px;
-  height: auto;
-  border: 2px solid #ccc;
-  padding: 4px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-}
-
 nav a:hover{
 
   background-color: #0055aa;
   border-radius: 4px;
 }
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #888;
+  text-align: center;
+}
+
+/*Navigation bar Styling*/
+
+
+/* Main heading style*/
+
+
+/* All images*/
+
+
+
