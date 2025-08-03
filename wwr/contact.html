@@ -1,0 +1,114 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Whitewater Rafting Adventures for trip inquiries, reservations, and suggestions. Reach out to our friendly team today!">
+  <meta name="author" content="Shadrack Onyango">
+  <title>Whitewater Rafting Adventures | Contact Us</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="logo">
+    <h1>Whitewater Rafting</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contact Info Section -->
+    <section class="contact-details">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> Mama Ngina Dr, Mombasa Town, KE</p>
+      <p><strong>Phone:</strong> +254-756-475-959</p>
+      <p><strong>Email:</strong> info@whitewateradventures.co.ke</p>
+      
+      <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.1844576313716!2d39.67651801775684!3d-4.072918600955384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1840134e973bd6fd%3A0xb2efb725826a4ba9!2sMama%20Ngina%20Waterfront%2C%20Mombasa!5e0!3m2!1sen!2ske!4v1693561407989!5m2!1sen!2ske"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <figure>
+          <img src="images/employee1.jpg" alt="Smiling guide at rafting base">
+          <figcaption>Onyango - Lead Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Support staff with gear">
+          <figcaption>Susan - Safety Coordinator</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Receptionist at desk">
+          <figcaption>Sharon - Guest Services</figcaption>
+        </figure>
+        
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+
+        <!-- Text-only restriction using pattern and title -->
+        <label for="fullname">Full Name :</label>
+        <input type="text" id="fullname" name="fullname" required pattern="[A-Za-z\s]+" title="Text only, no numbers allowed">
+
+        <label for="email">Email Address : </label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Purpose of Message:</p>
+        <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 Whitewater Rafting Adventures | Shadrack Onyango</p>
+    <div class="socialmedia">
+      <a href="#"><img src="images/facebook.png" alt="Whitewater Rafting Adventures Facebook page"></a>
+      <a href="#"><img src="images/twitter.png" alt="Whitewater Rafting Adventures Twitter page"></a>
+      <a href="#"><img src="images/instagram.png" alt="Whitewater Rafting Adventures Instagram page"></a>
+    </div>
+    <p><a href="images/contact-wireframe.png" target="_blank">View Contact Page Wireframe</a></p>
+  </footer>
+</body>
+</html>
