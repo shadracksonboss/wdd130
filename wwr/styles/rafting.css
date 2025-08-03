@@ -1,5 +1,6 @@
 
 
+
 :root {
   --primary-color: #004E89;
   --secondary-color: #6DAEDB;
@@ -15,16 +16,20 @@
   box-sizing: border-box;
 }
 
+/* Typography */
+
 body {
   font-family: var(--body-font);
   color: #333;
-  background-color: #fff;
+  background-color: #f4f4f4;
   line-height: 1.6;
 }
 
 header, main, footer {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* ===== Header ===== */
@@ -45,6 +50,7 @@ header .logo {
 header h1 {
   text-align: center;
   font-family: var(--heading-font);
+  font-size: 2rem;
 }
 
 header nav ul {
@@ -137,6 +143,7 @@ nav a.active {
 }
 
 .history-text {
+  padding: 0 1rem;
   font-size: 1rem;
   color: #333;
 }
@@ -174,6 +181,7 @@ nav a.active {
 
 .adventures-gallery figure {
   width: 18%;
+  
   text-align: center;
 }
 
@@ -211,6 +219,135 @@ nav a.active {
   border-radius: 4px;
 }
 
+
+/* Contact Info Section */
+.contact-details {
+  background: #e9ecef;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.contact-details .map-container {
+  margin-top: 1rem;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Team Section */
+.team {
+  padding: 2rem;
+  background-color: #5ac9cb;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  align-items: start;
+}
+
+.team-grid figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.team-grid img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover; /* This ensures the image fills the box and maintains visual uniformity */
+  border-radius: 50%; /* Makes them circular */
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #debaba;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form input[type="text"]:invalid,
+.contact-form input[type="email"]:invalid {
+  border-color: rgb(74, 62, 62);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="checkbox"],
+.contact-form input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.contact-form button {
+  background-color: #005f73;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0a9396;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===== Footer ===== */
 footer {
   display: flex;
@@ -219,7 +356,7 @@ footer {
   padding: 1rem 20px;
   max-width: 800px;
   margin: 0 auto;
-  background-color: var(--primary-color);
+  background-color: rgb(91, 134, 91);
   color: whitesmoke;
 }
 
@@ -250,6 +387,7 @@ footer p {
 }
 
 /* ===== Responsive Design ===== */
+
 
 /* ===== Mobile Friendly Fixes ===== */
 @media (max-width: 768px) {
@@ -320,4 +458,3 @@ footer p {
     padding: 0 1rem;
   }
 }
-
