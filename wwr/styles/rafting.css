@@ -346,32 +346,6 @@ nav a.active {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ===== Footer ===== */
 footer {
   display: flex;
@@ -482,4 +456,44 @@ footer p {
     padding: 0 1rem;
   }
 }
+
+
+/* 1. Ensures images scale */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 2. Make containers fluid */
+.container, .trips-container, .home-main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 3. Flexbox wrap for narrow screens */
+.flex, .grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 4. Mobile-first responsive tweaks */
+@media (max-width: 768px) {
+  .flex, .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero, .trip-card, .home-section {
+    width: 100%;
+    padding: 1rem;
+  }
+  h1, h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
 
