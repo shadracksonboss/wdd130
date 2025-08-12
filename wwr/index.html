@@ -1,41 +1,121 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en-US">
-  
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Shadrack Onyango's homepage for WDD 130. Learn more about Shadrack, his interests, and web development journey.">
-    <meta name="author" content="Shadrack Onyango">
-      
-    <title>Shadrack Onyango | WDD 130</title>
-    <link rel="stylesheet" href="styles/styles.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thrilling whitewater rafting adventures, expert guides, and unforgettable journeys. Book yours today!">
+  <meta name="author" content="Shadrack Onyango">
+  <title>Whitewater Rafting Adventures | Home</title>
 
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">Home</a>
-        <a href="wwr/">Rafting Website</a>
-      </nav>
-    </header>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <main>
-      <h1>Shadrack Onyango | WDD 130</h1>
-      <img src="images/profile.jpg" alt="My profile image" >
-      <p>Hello! I'm Shadrack Onyango from Kenya. I’m an automotive technician, a BYU-Idaho student, and I love engineering, reading novels, and serving others. I'm passionate about learning and representing Young Single Adults in uplifting ways!</p>
-    </main>
-    
-    <aside>
-      <h2>Kenya</h2>
-      <img src="images/kenya.jpg" alt="Scenic view of Kenya" >
-      <p>Kenya is a beautiful country located in East Africa, known for its wildlife, coastal cities, and rich culture. From the savannas to the Great Rift Valley, Kenya offers a unique blend of natural beauty and modern development.</p>
-    </aside>
-     
-    
-    <footer>
-      <p>&copy;2025 ⚙️ Shadrack Onyango ⚙️ Kenya</p>
-    </footer>
-  </body>
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="logo">
+    <h1>Whitewater Rafting</h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Ride the Rapids. Embrace the Adventure!</h2>
+        <p>“Fear is temporary. Achievement is permanent.” – Jim Slade</p>
+        <a href="trips.html" class="btn-cta">Book Your Trip</a>
+      </div>
+    </section>
+
+    <!-- Adventure Highlights -->
+    <section class="highlights">
+      <div class="highlight-card">
+        <img src="images/family-rafting.jpg" alt="Family rafting fun" loading="lazy">
+        <h3>Family Rafting Fun</h3>
+        <p>Safe and exciting trips perfect for families with kids.</p>
+      </div>
+      <div class="highlight-card">
+        <img src="images/whitewater-thrill.jpg" alt="Extreme whitewater" loading="lazy">
+        <h3>Extreme Whitewater Thrills</h3>
+        <p>Class IV and V rapids for adrenaline seekers.</p>
+      </div>
+      <div class="highlight-card">
+        <img src="images/group-discount.jpg" alt="Group rafting discount" loading="lazy">
+        <h3>Group Discounts</h3>
+        <p>Bring more buddies, save more bucks.</p>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features">
+      <div>
+        <h3>🛶 Certified Guides</h3>
+        <p>Trained and experienced instructors for your safety.</p>
+      </div>
+      <div>
+        <h3>🏕️ Scenic Routes</h3>
+        <p>Explore breathtaking canyons and riverscapes.</p>
+      </div>
+      <div>
+        <h3>🛡️ Always Safe</h3>
+        <p>Top-notch safety gear and protocols on every trip.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>What Guests Say</h2>
+      <div class="testimonial-card">
+        <p>"Best adventure ever—totally exceeded expectations!"</p>
+        <span>– Aisha K.</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Thrilling rapids, stunning views, and amazing guides!"</p>
+        <span>– Moses T.</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"We came for fun and left with memories for life."</p>
+        <span>– Juma F.</span>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2>Get Updates & Offers</h2>
+      <form>
+        <label for="name" class="visually-hidden">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+        <label for="email" class="visually-hidden">Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+        <button type="submit">Subscribe</button>
+        <p class="privacy-note">We respect your privacy. No spam.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 Whitewater Rafting Adventures | Shadrack Onyango</p>
+    <div class="socialmedia">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
 </html>
