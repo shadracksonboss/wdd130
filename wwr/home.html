@@ -15,108 +15,202 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/rafting-enhanced.css">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="logo">
-    <h1>Whitewater Rafting</h1>
-    <nav>
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo-section">
+          <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="logo">
+          <h1>Whitewater Rafting</h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="home.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="trips.html" class="nav-link">Trips</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Ride the Rapids. Embrace the Adventure!</h2>
-        <p>“Fear is temporary. Achievement is permanent.” – Jim Slade</p>
-        <a href="trips.html" class="btn-cta">Book Your Trip</a>
+  <!-- Hero Section with Enhanced Layout -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h2 class="hero-title">Ride the Rapids. Embrace the Adventure!</h2>
+          <p class="hero-quote">"Fear is temporary. Achievement is permanent." – Jim Slade</p>
+          <div class="hero-actions">
+            <a href="trips.html" class="btn-cta">Book Your Trip</a>
+            <a href="about.html" class="btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/hero.jpg" alt="White water rafting adventure" class="hero-image">
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Adventure Highlights -->
-    <section class="highlights">
-      <div class="highlight-card">
-        <img src="images/family-rafting.jpg" alt="Family rafting fun" loading="lazy">
-        <h3>Family Rafting Fun</h3>
-        <p>Safe and exciting trips perfect for families with kids.</p>
-      </div>
-      <div class="highlight-card">
-        <img src="images/whitewater-thrill.jpg" alt="Extreme whitewater" loading="lazy">
-        <h3>Extreme Whitewater Thrills</h3>
-        <p>Class IV and V rapids for adrenaline seekers.</p>
-      </div>
-      <div class="highlight-card">
-        <img src="images/group-discount.jpg" alt="Group rafting discount" loading="lazy">
-        <h3>Group Discounts</h3>
-        <p>Bring more buddies, save more bucks.</p>
-      </div>
-    </section>
+  <!-- Adventure Highlights with Card Layout -->
+  <section class="adventures-section">
+    <div class="container">
+      <h2 class="section-title">Adventure Highlights</h2>
+      <div class="adventures-grid">
+        <div class="adventure-card">
+          <div class="card-image">
+            <img src="images/family-rafting.jpg" alt="Family rafting fun" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>Family Rafting Fun</h3>
+            <p>Safe and exciting trips perfect for families with kids. Create lasting memories together.</p>
+            <a href="trips.html" class="card-link">Explore Family Trips →</a>
+          </div>
+        </div>
 
-    <!-- Why Choose Us -->
-    <section class="features">
-      <div>
-        <h3>🛶 Certified Guides</h3>
-        <p>Trained and experienced instructors for your safety.</p>
-      </div>
-      <div>
-        <h3>🏕️ Scenic Routes</h3>
-        <p>Explore breathtaking canyons and riverscapes.</p>
-      </div>
-      <div>
-        <h3>🛡️ Always Safe</h3>
-        <p>Top-notch safety gear and protocols on every trip.</p>
-      </div>
-    </section>
+        <div class="adventure-card">
+          <div class="card-image">
+            <img src="images/whitewater-thrill.jpg" alt="Extreme whitewater" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>Extreme Whitewater Thrills</h3>
+            <p>Class IV and V rapids for adrenaline seekers. Push your limits with expert guidance.</p>
+            <a href="trips.html" class="card-link">View Extreme Trips →</a>
+          </div>
+        </div>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <h2>What Guests Say</h2>
-      <div class="testimonial-card">
-        <p>"Best adventure ever—totally exceeded expectations!"</p>
-        <span>– Aisha K.</span>
+        <div class="adventure-card">
+          <div class="card-image">
+            <img src="images/group-discount.jpg" alt="Group rafting discount" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>Group Discounts</h3>
+            <p>Bring more buddies, save more bucks. Perfect for team building and celebrations.</p>
+            <a href="contact.html" class="card-link">Get Group Quote →</a>
+          </div>
+        </div>
       </div>
-      <div class="testimonial-card">
-        <p>"Thrilling rapids, stunning views, and amazing guides!"</p>
-        <span>– Moses T.</span>
+    </div>
+  </section>
+
+  <!-- Why Choose Us with Icon Grid -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🛶</div>
+          <h3>Certified Guides</h3>
+          <p>Trained and experienced instructors ensuring your safety on every adventure.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🏕️</div>
+          <h3>Scenic Routes</h3>
+          <p>Explore breathtaking canyons and pristine riverscapes with stunning views.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🛡️</div>
+          <h3>Always Safe</h3>
+          <p>Top-notch safety gear and comprehensive protocols on every single trip.</p>
+        </div>
       </div>
-      <div class="testimonial-card">
-        <p>"We came for fun and left with memories for life."</p>
-        <span>– Juma F.</span>
+    </div>
+  </section>
+
+  <!-- Testimonials with Enhanced Cards -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">What Our Guests Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">"The guides were incredible! They made our family feel safe while giving us the adventure of a lifetime. We'll be back!"</p>
+          <div class="testimonial-author">
+            <img src="images/happy-customer.jpg" alt="Sarah Johnson" class="author-image">
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>Family Trip, July 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">"Professional, thrilling, and absolutely unforgettable. The extreme rapids pushed my limits in the best way possible!"</p>
+          <div class="testimonial-author">
+            <img src="images/profile.jpg" alt="Mike Chen" class="author-image">
+            <div class="author-info">
+              <h4>Mike Chen</h4>
+              <p>Extreme Adventure, August 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">"Perfect team building experience! Our corporate group had an amazing time and the group discount was fantastic."</p>
+          <div class="testimonial-author">
+            <img src="images/employee1.jpg" alt="Lisa Rodriguez" class="author-image">
+            <div class="author-info">
+              <h4>Mikel Rodriguez</h4>
+              <p>Corporate Group, September 2024</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter">
-      <h2>Get Updates & Offers</h2>
-      <form>
-        <label for="name" class="visually-hidden">Name</label>
-        <input type="text" name="name" id="name" placeholder="Your Name" required pattern="[A-Za-z\s]+" title="Text only, no numbers allowed">
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready for Your Next Adventure?</h2>
+        <p>Join thousands of satisfied adventurers who have discovered the thrill of whitewater rafting with us.</p>
+        <div class="cta-buttons">
+          <a href="trips.html" class="btn-primary">View All Trips</a>
+          <a href="contact.html" class="btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <label for="email" class="visually-hidden">Email</label>
-        <input type="email" name="email" id="email" placeholder="Your Email" required>
-
-        <button type="submit">Subscribe</button>
-        <p class="privacy-note">We respect your privacy. No spam.</p>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>©2025 Whitewater Rafting Adventures | Shadrack Onyango</p>
-    <div class="socialmedia">
-      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>&copy; 2025 Whitewater Rafting Adventures. All rights reserved.</p>
+          <p>Last updated: <span id="last-updated"></span></p>
+        </div>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <img src="images/twitter.png" alt="Twitter">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Update last modified date
+    document.getElementById('last-updated').textContent = document.lastModified;
+  </script>
 </body>
 </html>
+
+
+
+
 
