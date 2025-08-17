@@ -6,105 +6,177 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn more about our Whitewater Rafting Company—history, mission, and outdoor spirit.">
+  <meta name="description" content="Learn about our whitewater rafting company's history, mission, and expert team.">
   <meta name="author" content="Shadrack Onyango">
-  <title>Whitewater Rafting Adventures | About Us</title>
+  <title>About Us | Whitewater Rafting Adventures</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/complete-styles.css">
 </head>
-
 <body>
-  <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="logo">
-    <h1>Whitewater Rafting</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo-section">
+          <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="logo">
+          <h1>Whitewater Rafting</h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About Us</a></li>
+            <li><a href="trips.html" class="nav-link">Trips</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="images/hero.jpg" alt=" Group rafting through whitewater rapids in scenic mountain river">
-      <h1>Whitewater Rafting Adventures</h1>
-      <article>
-        <img src="images/happy-customer.jpg" alt="Happy rafter smiling after a rafting experience">
-        <p>We deliver safe and unforgettable rafting journeys. With professionally trained guides and family-first values, our mission is to lift individuals and strengthen group experiences through the thrill of water and service.</p>
-      </article>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h2 class="hero-title">Our Story of Adventure</h2>
+          <p class="hero-quote">"Every great adventure begins with a single paddle stroke."</p>
+          <div class="hero-actions">
+            <a href="trips.html" class="btn-cta">Explore Our Trips</a>
+            <a href="contact.html" class="btn-secondary">Meet Our Team</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/history.jpg" alt="Rafting team on the river" class="hero-image">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- History Section -->
-    <section class="history">
-      <h2>Our History</h2>
+  <!-- History Section -->
+  <section class="history-section">
+    <div class="container">
+      <h2 class="section-title">Our Rich History</h2>
       <div class="history-grid">
-        <div class="history-text left">
-          <p>Founded in 2010, our guided rafting trips began as a small community outreach event. Today, we serve thousands yearly, with a reputation built on trust, safety, and adventurous spirit.</p>
+        <div class="history-card">
+          <div class="card-image">
+            <img src="images/history.jpg" alt="Rafting History" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>From Humble Beginnings</h3>
+            <p>Whitewater rafting has roots tracing back to the mid-19th century when the first wooden rafts were used for exploration and transport on wild rivers. In 1842, Lieutenant John Fremont and Horace H. Day constructed a rubber raft to navigate the Platte River, laying the foundation for modern rafting.</p>
+          </div>
         </div>
-        <div class="history-img">
-          <img src="images/history.jpg" alt="Rafting history and growth">
-        </div>
-        <div class="history-text right">
-          <p>Our journey from humble beginnings to an award-winning rafting company has been fueled by our love for the river and the people we serve. We're committed to environmental conservation and community development.</p>
+        <div class="history-card">
+          <div class="card-content">
+            <h3>Evolution to Recreation</h3>
+            <p>By the mid-20th century, rafting evolved from exploration into recreation. With advancements in inflatable rafts after World War II, the sport grew rapidly. Today, whitewater rafting is a popular adventure activity worldwide, combining skill, teamwork, and thrill across rivers of varying difficulty.</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Growth and Impact Section -->
-    <section class="history-text">
-      <h2>Growth & Impact</h2>
-      <p>Over the years, we’ve expanded our fleet, added more river routes, and trained top-tier guides to ensure safe and memorable experiences. We're committed to environmental conservation and community development around the rivers we explore.</p>
-    </section>
+  <!-- Our Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <h2 class="section-title">Meet Our Expert Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="card-image">
+            <img src="images/employee1.jpg" alt="John Onyango - Lead Guide" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>John Onyango</h3>
+            <p class="team-role">Lead Guide</p>
+            <p>With 15+ years of experience navigating the most challenging rapids, John ensures every adventure is both safe and thrilling.</p>
+          </div>
+        </div>
 
-    <!-- Adventure Gallery -->
-    <section class="adventure-section">
-      <h2>Adventure Awaits You!</h2>
-      <div class="adventures-gallery">
-        <figure>
-          <img src="images/rafting1.jpg" alt="Rafting on rapids">
-          <figcaption>Rafting on Rapids</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting2.jpg" alt="Team paddling">
-          <figcaption>Team Paddling</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting3.jpg" alt="Rafting splash">
-          <figcaption>Rafting Splash</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting4.jpg" alt="Riverside smiles">
-          <figcaption>Riverside Smiles</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting5.jpg" alt="Group celebration">
-          <figcaption>Group Celebration</figcaption>
-        </figure>
+        <div class="team-card">
+          <div class="card-image">
+            <img src="images/employee2.jpg" alt="Sarah Johnson - Safety Expert" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>Sarah Johnson</h3>
+            <p class="team-role">Safety Expert</p>
+            <p>Certified safety instructor with extensive wilderness first aid training, ensuring your adventure is always secure.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="card-image">
+            <img src="images/employee3.jpg" alt=" Chen Chong- Adventure Planner" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3> Charlotte Chong</h3>
+            <p class="team-role">Adventure Planner</p>
+            <p>Specializes in creating custom itineraries that match your skill level and adventure preferences perfectly.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="card-image">
+            <img src="images/employee4.jpg" alt="Lisa Rodriguez - Customer Service" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>Lennox Owen</h3>
+            <p class="team-role"> Raft Engineer</p>
+            <p> Ensures the design, safety, and maintenance of our rafting equipment and structures used in whitewater adventures  ensuring top-notch performance</p>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Join Our Adventure Family?</h2>
+        <p>Experience the thrill of whitewater rafting with our expert team. From gentle family floats to extreme rapids, we have the perfect adventure waiting for you.</p>
+        <div class="cta-buttons">
+          <a href="trips.html" class="btn-primary">Book Your Adventure</a>
+          <a href="contact.html" class="btn-outline">Contact Our Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer>
-    <p>©2025 Whitewater Rafting Adventures | Shadrack Onyango</p>
-    <div class="socialmedia">
-      <a href="#"><img src="images/facebook.png" alt=" Whitewater Rafting Facebook icon"></a>
-      <a href="#"><img src="images/twitter.png" alt=" Whitewater Rafting Twitter icon"></a>
-      <a href="#"><img src="images/instagram.png" alt=" Whitewater Rafting Instagram icon"></a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>&copy; 2025 Whitewater Rafting Adventures. All rights reserved.</p>
+          <p>Last updated: <span id="last-updated"></span></p>
+        </div>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <img src="images/twitter.png" alt="Twitter">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Update last modified date
+    document.getElementById('last-updated').textContent = document.lastModified;
+  </script>
 </body>
 </html>
+
 
 
 
