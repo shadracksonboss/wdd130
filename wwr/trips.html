@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -17,64 +18,126 @@
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="logo">
-    <h1>Whitewater Rafting</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a class="active" href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo-section">
+          <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="logo">
+          <h1>Whitewater Rafting</h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="trips.html" class="nav-link active">Trips</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="trips-hero">
-      <h2>Choose Your Adventure</h2>
-      <p>From calm rivers to raging rapids—find the perfect trip for you.</p>
-    </section>
-
-    <section class="trips-list">
-      <div class="trip-card">
-        <img src="images/beginner-trip.jpg" alt="Beginner rafting trip" loading="lazy">
-        <h3>Beginner Bliss</h3>
-        <p>A gentle ride for first-timers and families. Scenic views and fun splashes guaranteed.</p>
-        <p><strong>Duration:</strong> 2 hours</p>
-        <p><strong>Price:</strong> $59 per person</p>
-        <a href="contact.html" class="btn-cta">Book Now</a>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h2 class="hero-title">Choose Your Adventure</h2>
+          <p class="hero-quote">From calm rivers to raging rapids—find the perfect trip for you.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn-cta">Book Your Trip</a>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="trip-card">
-        <img src="images/intermediate-trip.jpg" alt="Intermediate rafting trip" loading="lazy">
-        <h3>River Rush</h3>
-        <p>Take it up a notch with moderate rapids, perfect for those seeking a mix of thrill and chill.</p>
-        <p><strong>Duration:</strong> Half Day</p>
-        <p><strong>Price:</strong> $89 per person</p>
-        <a href="contact.html" class="btn-cta">Book Now</a>
+  <!-- Adventures Section with Card Grid -->
+  <section class="adventures-section">
+    <div class="container">
+      <h2 class="section-title">Our Rafting Trips</h2>
+      <div class="adventures-grid">
+        <div class="adventure-card">
+          <div class="card-image">
+            <img src="images/beginner-trip.jpg" alt="Beginner rafting trip" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>Beginner Bliss</h3>
+            <p>A gentle ride for first-timers and families. Scenic views and fun splashes guaranteed.</p>
+            <p><strong>Duration:</strong> 2 hours</p>
+            <p><strong>Price:</strong> $59 per person</p>
+            <a href="contact.html" class="card-link">Book Now</a>
+          </div>
+        </div>
+
+        <div class="adventure-card">
+          <div class="card-image">
+            <img src="images/intermediate-trip.jpg" alt="Intermediate rafting trip" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>River Rush</h3>
+            <p>Take it up a notch with moderate rapids, perfect for those seeking a mix of thrill and chill.</p>
+            <p><strong>Duration:</strong> Half Day</p>
+            <p><strong>Price:</strong> $89 per person</p>
+            <a href="contact.html" class="card-link">Book Now</a>
+          </div>
+        </div>
+
+        <div class="adventure-card">
+          <div class="card-image">
+            <img src="images/expert-trip.jpg" alt="Expert rafting trip" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>Rapid Fury</h3>
+            <p>For the bold. Conquer Class IV-V rapids with expert guides and serious adrenaline.</p>
+            <p><strong>Duration:</strong> Full Day</p>
+            <p><strong>Price:</strong> $129 per person</p>
+            <a href="contact.html" class="card-link">Book Now</a>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="trip-card">
-        <img src="images/expert-trip.jpg" alt="Expert rafting trip" loading="lazy">
-        <h3>Rapid Fury</h3>
-        <p>For the bold. Conquer Class IV-V rapids with expert guides and serious adrenaline.</p>
-        <p><strong>Duration:</strong> Full Day</p>
-        <p><strong>Price:</strong> $129 per person</p>
-        <a href="contact.html" class="btn-cta">Book Now</a>
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready for Your Next Adventure?</h2>
+        <p>Join thousands of satisfied adventurers who have discovered the thrill of whitewater rafting with us.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn-primary">Book Your Trip</a>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <p>©2025 Whitewater Rafting Adventures | Shadrack Onyango</p>
-    <div class="socialmedia">
-      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>&copy;2025 Whitewater Rafting Adventures | Shadrack Onyango</p>
+        </div>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <img src="images/twitter.png" alt="Twitter">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
 </html>
+
+
+
 
 
